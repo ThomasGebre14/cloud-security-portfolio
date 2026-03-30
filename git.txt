@@ -1,0 +1,50 @@
+Install Git
+git --version
+
+Connect Git to your identity
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+Open folder in VS code
+cloud-security-portfolio/
+
+Initialize Git (inside VS Code terminal)
+git init
+👉This turns your folder into a Git repository
+
+Add Your Files
+git add .
+👉 This stages all files
+
+First Commit
+git commit -m "Initial commit - AZ-900 portfolio"
+
+Create Repo on GitHub
+cloud-security-portfolio
+
+Link Local Repo to GitHub
+GitHub will show commands — use this:
+git remote add origin https://github.com/ThomasGebre14/cloud-security-portfolio.git
+
+Push to GitHub
+git branch -M main
+git push -u origin main
+
+Next time, when I update files
+git add .
+git commit -m "Add AZ-104 notes"
+git push
+===================================================================
+
+…or create a new repository on the command line
+echo "# cloud-security-portfolio" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ThomasGebre14/cloud-security-portfolio.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/ThomasGebre14/cloud-security-portfolio.git
+git branch -M main
+git push -u origin main
